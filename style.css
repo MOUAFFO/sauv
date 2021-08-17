@@ -1,0 +1,43 @@
+.content{
+    height: 100vh;
+    margin-top: 10px;
+    color: white;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+
+}
+.carte{
+    background-color: red;
+    background-position: 25% 75%;
+}
+.carte img{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    margin: 50px auto;
+    background-position: 25% 75%;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact div{
+    background-color: black;
+    margin: 100px;
+    
+    
+}
+
+button{
+    border-radius: 25%;
+    margin-left:100px;
+    
+}
+
+span{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
