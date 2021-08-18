@@ -1,43 +1,97 @@
-.content{
-    height: 100vh;
+
+.divDesContacts{
+ 
     margin-top: 10px;
     color: white;
-    background-color: orange;
+    background-color:#767170;
+    height: 50vh;
+    z-index: 2 !important;
     display: flex;
     flex-direction: row;
 
 }
 .carte{
-    background-color: red;
-    background-position: 25% 75%;
+
+  
+    background-color: pink;
+    height: 50vh;
+   
 }
+.rowContact{
+    height: 50% !important;
+    width: 100% !important;
+   
+}
+
 .carte img{
-    width: 600px;
-    height: 600px;
-    background-color: blue;
-    margin: 50px auto;
-    background-position: 25% 75%;
+    width: 750px;
+    height: 750px;
+    margin-right: 1000px !important;
+    background-color:purple;
+    z-index: 1 !important;
+    top:200px;
+
 }
+
 .contact{
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
+    height: auto;
 }
 
-.contact div{
-    background-color: black;
-    margin: 100px;
-    
+
+
+.buttonContact{
+    border-width: 2px 4px;
+    border-radius: 40px !important;    
+    margin-left:0px;
+    width: 130px;
+
     
 }
 
-button{
-    border-radius: 25%;
-    margin-left:100px;
-    
-}
-
-span{
+.spanContact{
     color: white;
     font-weight: bold;
     font-size: 20px;
 }
+@media screen and (max-width: 575.98px) {
+
+  .divDesContacts{
+      display: flex;
+      width: 100% !important;
+
+      height: 200vh !important;
+      background-color: paleturquoise;
+      flex-direction: column-reverse !important;
+  }
+  .rowContact{
+      width: 100vw !important;
+      padding: 10vw;
+  }
+  .rowContact div{
+      margin-bottom: 10px;
+      height: 220px;
+      background: darkslategray;
+  }
+ 
+
+  .carte{
+      width: 100% !important;
+
+  }
+  .carte img{
+    width: 500px;
+    height: 500px;
+    margin-right: 1000px !important;
+    background-color:purple;
+    clip: rect(100px,100px,100px,100px);
+  }
+  
+    
+   
+
+}
+    
+    
