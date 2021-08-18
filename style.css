@@ -4,19 +4,20 @@
     margin-top: 10px;
     color: white;
     background-color:#767170;
-    height: 50vh;
-    z-index: 2 !important;
+    height: 70vh;
+ 
     display: flex;
     flex-direction: row;
 
 }
 .carte{
-
-  
-    background-color: pink;
-    height: 50vh;
-   
+ 
+    /*background-color: pink;*/
+    background-image: url(france.png);
+    height: 100%;
+    background-position: bottom 90% left 150%;   
 }
+
 .rowContact{
     height: 50% !important;
     width: 100% !important;
@@ -24,12 +25,13 @@
 }
 
 .carte img{
-    width: 750px;
-    height: 750px;
-    margin-right: 1000px !important;
+   width: 900px;
+    height: 500px;
+    max-width: 200px;
+   margin-left: 0px;
     background-color:purple;
-    z-index: 1 !important;
-    top:200px;
+  
+    object-fit: cover;
 
 }
 
@@ -69,24 +71,26 @@
   .rowContact{
       width: 100vw !important;
       padding: 10vw;
+      height: 600px !important;
   }
   .rowContact div{
+    
+      height: 220px !important;
+   
       margin-bottom: 10px;
-      height: 220px;
       background: darkslategray;
   }
  
 
   .carte{
       width: 100% !important;
+      height: 100% !important;
+     
 
   }
   .carte img{
-    width: 500px;
-    height: 500px;
-    margin-right: 1000px !important;
-    background-color:purple;
-    clip: rect(100px,100px,100px,100px);
+
+    
   }
   
     
