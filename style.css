@@ -1,10 +1,12 @@
 
 .divDesContacts{
- 
+    
     margin-top: 10px;
     color: white;
     background-color:#767170;
     height: 70vh;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
  
     display: flex;
     flex-direction: row;
@@ -13,27 +15,25 @@
 .carte{
  
     /*background-color: pink;*/
-    background-image: url(france.png);
+    background-image: url(cartess.png);
     height: 100%;
-    background-position: bottom 90% left 150%;   
+
+    background-position-x: left !important;
+    background-position-y: top !important;
 }
 
 .rowContact{
     height: 50% !important;
-    width: 100% !important;
+    width: 100vw !important;
    
 }
 
-.carte img{
-   width: 900px;
-    height: 500px;
-    max-width: 200px;
-   margin-left: 0px;
-    background-color:purple;
-  
-    object-fit: cover;
-
+.rowContact div{
+    padding-left: 100px;
+    padding-top: 50px;
 }
+
+
 
 .contact{
     z-index: 1;
@@ -58,44 +58,85 @@
     font-weight: bold;
     font-size: 20px;
 }
+/*telephone */
 @media screen and (max-width: 575.98px) {
 
   .divDesContacts{
       display: flex;
       width: 100% !important;
+      top: 0px !important;
 
-      height: 200vh !important;
+      height:1600px !important;
       background-color: paleturquoise;
       flex-direction: column-reverse !important;
   }
   .rowContact{
       width: 100vw !important;
       padding: 10vw;
-      height: 600px !important;
+      height: 700px !important;
   }
   .rowContact div{
     
-      height: 220px !important;
-   
-      margin-bottom: 10px;
+      height: 270px !important;
+      margin-bottom:30px;
       background: darkslategray;
+  }
+
+  .carte{
+      background-position-x: left !important;
+      background-position-y: top !important;
+      height: 300px !important;
   }
  
 
-  .carte{
-      width: 100% !important;
-      height: 100% !important;
-     
-
-  }
-  .carte img{
-
-    
-  }
   
-    
-   
-
 }
+ /*tablette*/
+ @media (min-width: 600px) and (max-width:991.98px)  {
+   
+    body{
+        padding: 0px !important;
+    }
+   .divDesContacts{
+
+    display: flex;
+    flex-direction: column-reverse;
+    width: 200vw !important;
+    padding-left: 0px !important;
+    margin-top: 350px;
+
+   }
+
+   .carte{
+       background-position-x: 50% 70%!important;
+       background-position-y: 10% 30% !important;
+
+    }
+
+    .contact{
+        width: 100% !important;
+        display: flex;
+       /* height: 100vh !important;*/
+        flex-direction: column !important;
+    }
+    .rowContact{
+        display: flex !important;
+        flex-direction: row!important;
+        width: 100vw !important;
+        
+
+    }
+    .rowContact div{
+  
+        
+     
+    }
+
+   
+       
+ 
+   
+  
+  }
     
     
